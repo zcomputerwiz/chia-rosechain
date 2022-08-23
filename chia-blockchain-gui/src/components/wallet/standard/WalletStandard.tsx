@@ -733,7 +733,7 @@ export default function StandardWallet(props: StandardWalletProps) {
       <Flex gap={1} alignItems="center">
         <Flex flexGrow={1}>
           <Typography variant="h5" gutterBottom>
-            <Trans>Rose Wallet</Trans>
+            <Trans>Chia Wallet</Trans>
           </Typography>
         </Flex>
         <More>

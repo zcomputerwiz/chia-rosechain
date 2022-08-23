@@ -15,7 +15,7 @@ function getInstallerConfig () {
 
   return Promise.resolve({
     appDirectory: path.join(rootPath, 'Chia-win32-x64'),
-    authors: 'Rose',
+    authors: 'Chia',
     version: process.env.CHIA_INSTALLER_VERSION,
     noMsi: true,
     iconUrl: 'https://raw.githubusercontent.com/Chia-Network/chia-blockchain/master/electron-react/src/assets/img/chia.ico',
@@ -23,7 +23,7 @@ function getInstallerConfig () {
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
 	name:'chia-blockchain',
-    exe: 'Rose.exe',
+    exe: 'Chia.exe',
     setupExe: 'Chia-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chia.ico')
   })

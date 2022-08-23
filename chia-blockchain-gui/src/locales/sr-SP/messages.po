@@ -712,7 +712,7 @@ msgid "Enter the 24 word mnemonic that you have saved in order to restore your C
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:147
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Rose Wallet."
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia Wallet."
 #~ msgstr "Унесите мнемонику од 24 речи коју сте сачували да бисте вратили Чија новчаник."
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
@@ -1766,7 +1766,7 @@ msgstr "Врати метаподатке за обојене новчиће и 
 #~ msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:736
-msgid "Rose Wallet"
+msgid "Chia Wallet"
 msgstr "Чија Новчаник"
 
 #: src/components/fullNode/FullNode.jsx:57

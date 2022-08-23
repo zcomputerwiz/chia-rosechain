@@ -1766,7 +1766,7 @@ msgstr "Állítsa vissza a színes érmék és más intelligens pénztárcák me
 #~ msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:736
-msgid "Rose Wallet"
+msgid "Chia Wallet"
 msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:57

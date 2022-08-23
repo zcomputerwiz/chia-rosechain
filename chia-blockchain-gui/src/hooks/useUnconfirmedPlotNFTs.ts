@@ -1,7 +1,7 @@
 import { useLocalStorage, writeStorage } from '@rehooks/local-storage';
 import UnconfirmedPlotNFT from '../types/UnconfirmedPlotNFT';
 
-const LOCAL_STORAGE_KEY = 'roseunconfirmedPlotNFTs';
+const LOCAL_STORAGE_KEY = 'chiaunconfirmedPlotNFTs';
 
 export default function useUnconfirmedPlotNFTs(): {
   unconfirmed: UnconfirmedPlotNFT[];

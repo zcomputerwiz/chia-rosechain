@@ -1762,8 +1762,8 @@ msgstr "Rivendosni të dhënat meta për monedhat me ngjyrë dhe kuletat e tjera
 #~ msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:736
-msgid "Rose Wallet"
-msgstr "Kuleta Rose"
+msgid "Chia Wallet"
+msgstr "Kuleta Chia"
 
 #: src/components/fullNode/FullNode.jsx:57
 #: src/components/fullNode/FullNodeConnections.jsx:107

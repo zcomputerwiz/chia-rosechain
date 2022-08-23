@@ -712,8 +712,8 @@ msgid "Enter the 24 word mnemonic that you have saved in order to restore your C
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:147
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Rose Wallet."
-#~ msgstr "Rose cüzdanınıza ulaşmak için saklamış olduğunuz 24 kelimelik şifre öbeğini girin."
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia Wallet."
+#~ msgstr "Chia cüzdanınıza ulaşmak için saklamış olduğunuz 24 kelimelik şifre öbeğini girin."
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
@@ -1766,8 +1766,8 @@ msgstr "Renkli coinler için metaveriyi ve diğer akıllı cüzdanları yedeklem
 #~ msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:736
-msgid "Rose Wallet"
-msgstr "Rose Cüzdanı"
+msgid "Chia Wallet"
+msgstr "Chia Cüzdanı"
 
 #: src/components/fullNode/FullNode.jsx:57
 #: src/components/fullNode/FullNodeConnections.jsx:107

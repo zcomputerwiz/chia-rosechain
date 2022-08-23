@@ -42,7 +42,7 @@ if (-not (Test-Path env:CHIA_INSTALLER_VERSION)) {
   $env:CHIA_INSTALLER_VERSION = '0.0.0'
   Write-Output "WARNING: No environment variable CHIA_INSTALLER_VERSION set. Using 0.0.0"
   }
-Write-Output "Rose Version is: $env:CHIA_INSTALLER_VERSION"
+Write-Output "Chia Version is: $env:CHIA_INSTALLER_VERSION"
 Write-Output "   ---"
 
 Write-Output "   ---"
@@ -64,7 +64,7 @@ Write-Output "pip install chia-blockchain"
 pip install --no-index --find-links=.\win_build\ chia-blockchain
 
 Write-Output "   ---"
-Write-Output "Use pyinstaller to create rose .exe's"
+Write-Output "Use pyinstaller to create chia .exe's"
 Write-Output "   ---"
 $SPEC_FILE = (python -c 'import chia; print(chia.PYINSTALLER_SPEC_PATH)') -join "`n"
 pyinstaller --log-level INFO $SPEC_FILE
@@ -109,7 +109,7 @@ Write-Output "packageName is $packageName"
 
 Write-Output "   ---"
 Write-Output "electron-packager"
-electron-packager . Rose --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\chia.ico --app-version=$packageVersion
+electron-packager . Chia --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\chia.ico --app-version=$packageVersion
 Write-Output "   ---"
 
 Write-Output "   ---"

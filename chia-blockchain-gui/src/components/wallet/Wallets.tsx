@@ -47,7 +47,7 @@ const WalletItem = (props: any) => {
 
   let mainLabel = <></>;
   if (type === WalletType.STANDARD_WALLET) {
-    mainLabel = <Trans>Rose Wallet</Trans>;
+    mainLabel = <Trans>Chia Wallet</Trans>;
     name = 'Chia';
   } else if (type === WalletType.COLOURED_COIN) {
     mainLabel = <Trans>CC Wallet</Trans>;

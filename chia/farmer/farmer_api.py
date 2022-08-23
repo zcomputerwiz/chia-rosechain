@@ -171,9 +171,9 @@ class FarmerAPI:
             self.farmer.log.warning(f"Have invalid PoSpace {pospace}")
             return None
 
-        rose_pool_sp = None
-        rose_pool_sp_sig = None
-        agg_sig_rose_pool_sig = None
+        chia_pool_sp = None
+        chia_pool_sp_sig = None
+        agg_sig_chia_pool_sig = None
 
         if is_sp_signatures:
             (
@@ -183,8 +183,8 @@ class FarmerAPI:
             reward_chain_sp, reward_chain_sp_harv_sig = response.message_signatures[1]
             if len(response.message_signatures) >= 3:
                 (
-                    rose_pool_sp,
-                    rose_pool_sp_sig
+                    chia_pool_sp,
+                    chia_pool_sp_sig
                 ) = response.message_signatures[2]
             for sk in self.farmer.get_private_keys():
                 pk = sk.get_g1()
@@ -203,14 +203,14 @@ class FarmerAPI:
                         taproot_share_rc_sp: G2Element = AugSchemeMPL.sign(
                             taproot_sk, reward_chain_sp, agg_pk)
 
-                        if rose_pool_sp is not None:
-                            taproot_share_rose_sp: G2Element = AugSchemeMPL.sign(
-                                taproot_sk, rose_pool_sp, agg_pk)
+                        if chia_pool_sp is not None:
+                            taproot_share_chia_sp: G2Element = AugSchemeMPL.sign(
+                                taproot_sk, chia_pool_sp, agg_pk)
 
                     else:
                         taproot_share_cc_sp = G2Element()
                         taproot_share_rc_sp = G2Element()
-                        taproot_share_rose_sp = G2Element()
+                        taproot_share_chia_sp = G2Element()
 
                     farmer_share_cc_sp = AugSchemeMPL.sign(
                         sk, challenge_chain_sp, agg_pk)
@@ -252,19 +252,19 @@ class FarmerAPI:
                         )
                     else:
                         assert pospace.pool_contract_puzzle_hash is not None
-                        if rose_pool_sp is not None and rose_pool_sp_sig is not None and self.farmer.pool_target is not None:
-                            rose_share_sp = AugSchemeMPL.sign(
-                                sk, rose_pool_sp, agg_pk)
-                            agg_sig_rose_pool_sig = AugSchemeMPL.aggregate(
-                                [rose_pool_sp_sig,
-                                 rose_share_sp, taproot_share_rose_sp]
+                        if chia_pool_sp is not None and chia_pool_sp_sig is not None and self.farmer.pool_target is not None:
+                            chia_share_sp = AugSchemeMPL.sign(
+                                sk, chia_pool_sp, agg_pk)
+                            agg_sig_chia_pool_sig = AugSchemeMPL.aggregate(
+                                [chia_pool_sp_sig,
+                                 chia_share_sp, taproot_share_chia_sp]
                             )
                             assert AugSchemeMPL.verify(
-                                agg_pk, rose_pool_sp, agg_sig_rose_pool_sig)
+                                agg_pk, chia_pool_sp, agg_sig_chia_pool_sig)
                             pool_target: Optional[PoolTarget] = PoolTarget(
                                 self.farmer.pool_target, uint32(0))
                             assert pool_target is not None
-                            pool_target_signature = agg_sig_rose_pool_sig
+                            pool_target_signature = agg_sig_chia_pool_sig
                         else:
                             pool_target = None
                             pool_target_signature = None

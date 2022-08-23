@@ -708,8 +708,8 @@ msgid "Enter the 24 word mnemonic that you have saved in order to restore your C
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:147
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Rose Wallet."
-#~ msgstr "輸入你已存的 24 字助記符號以復原您的 Rose 錢包。"
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia Wallet."
+#~ msgstr "輸入你已存的 24 字助記符號以復原您的 Chia 錢包。"
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
@@ -1762,8 +1762,8 @@ msgstr "從備份還原有色代幣和其他智慧錢包的元數據"
 #~ msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:736
-msgid "Rose Wallet"
-msgstr "Rose 錢包"
+msgid "Chia Wallet"
+msgstr "Chia 錢包"
 
 #: src/components/fullNode/FullNode.jsx:57
 #: src/components/fullNode/FullNodeConnections.jsx:107

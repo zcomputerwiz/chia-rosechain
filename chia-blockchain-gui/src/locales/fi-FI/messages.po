@@ -83,7 +83,7 @@ msgstr "Lisää Plot-hakemisto"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:70
 msgid "Add Plot to Queue"
-msgstr "Lisää Plottausprosessi Jonoon"
+msgstr "Lisää Plottauspchiassi Jonoon"
 
 #: src/components/wallet/Wallets.tsx:88
 #~ msgid "Add Wallet"
@@ -712,7 +712,7 @@ msgid "Enter the 24 word mnemonic that you have saved in order to restore your C
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:147
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Rose Wallet."
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia Wallet."
 #~ msgstr "Anna tallentamasi 24 muistisanaa palauttaaksesi Chia-lompakon."
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
@@ -1766,7 +1766,7 @@ msgstr "Palauta väritettyjen kolikkojen metatiedot ja muut älylompakot varmuus
 #~ msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:736
-msgid "Rose Wallet"
+msgid "Chia Wallet"
 msgstr "Chia-lompakko"
 
 #: src/components/fullNode/FullNode.jsx:57
@@ -2510,7 +2510,7 @@ msgstr "Voit silti luoda plotteja tälle Plot-NFT:lle, mutta et voi tehdä muuto
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:63
 msgid "You do not need to be synched or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
-msgstr "Noodin ei tarvitse olla synkronissa tai yhteydessä plotataksesi. Plottausprosessin aikana luodaan väliaikaistiedostoja, joiden yhteiskoko ylittää lopullisen plottitiedoston koon. Varmista että levyllä on tarpeeksi tilaa. <0>Katso lisää</0>"
+msgstr "Noodin ei tarvitse olla synkronissa tai yhteydessä plotataksesi. Plottauspchiassin aikana luodaan väliaikaistiedostoja, joiden yhteiskoko ylittää lopullisen plottitiedoston koon. Varmista että levyllä on tarpeeksi tilaa. <0>Katso lisää</0>"
 
 #: src/components/core/components/FormBackButton/FormBackButton.tsx:29
 msgid "You have made changes. Do you want to discard them?"

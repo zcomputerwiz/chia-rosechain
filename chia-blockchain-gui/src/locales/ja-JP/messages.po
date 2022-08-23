@@ -712,7 +712,7 @@ msgid "Enter the 24 word mnemonic that you have saved in order to restore your C
 msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:147
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Rose Wallet."
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia Wallet."
 #~ msgstr "チアウォレットを復元するには、24語の合言葉を入力してください。"
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
@@ -1766,7 +1766,7 @@ msgstr "バックアップからカラードコイン・その他スマートウ
 #~ msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:736
-msgid "Rose Wallet"
+msgid "Chia Wallet"
 msgstr "チアウォレット"
 
 #: src/components/fullNode/FullNode.jsx:57

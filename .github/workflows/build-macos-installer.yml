@@ -112,7 +112,7 @@ jobs:
       id: version_number
       run: |
         . ./activate
-        echo "::set-output name=CHIA_INSTALLER_VERSION::$(rose version)"
+        echo "::set-output name=CHIA_INSTALLER_VERSION::$(chia version)"
 
     - name: Upload MacOS artifacts
       uses: actions/upload-artifact@v2

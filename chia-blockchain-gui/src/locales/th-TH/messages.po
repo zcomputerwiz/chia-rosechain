@@ -317,8 +317,8 @@ msgid "Chia Blockchain Wiki"
 msgstr "Chia Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
-msgid "Rose Wallet"
-msgstr "Rose Wallet"
+msgid "Chia Wallet"
+msgstr "Chia Wallet"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -686,8 +686,8 @@ msgid "Edit"
 msgstr "แก้ไข"
 
 #: src/components/wallet/WalletImport.tsx:147
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your Rose Wallet."
-msgstr "ใส่รหัสนีโมนิค 24 คำที่คุณเคยบันทึกไว้ เพื่อกู้คืน Rose วอลเล็ตของคุณ"
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia Wallet."
+msgstr "ใส่รหัสนีโมนิค 24 คำที่คุณเคยบันทึกไว้ เพื่อกู้คืน Chia วอลเล็ตของคุณ"
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22

@@ -58,7 +58,7 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
-electron-packager . Rose --asar.unpack="**/daemon/**" --platform=darwin \
+electron-packager . Chia --asar.unpack="**/daemon/**" --platform=darwin \
 --icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=com.chia.blockchain \
 --appVersion=$CHIA_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
@@ -68,7 +68,7 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 fi
 
 if [ "$NOTARIZE" ]; then
-  electron-osx-sign Chia-darwin-arm64/Rose.app --platform=darwin \
+  electron-osx-sign Chia-darwin-arm64/Chia.app --platform=darwin \
   --hardened-runtime=true --provisioning-profile=chiablockchain.provisionprofile \
   --entitlements=entitlements.mac.plist --entitlements-inherit=entitlements.mac.plist \
   --no-gatekeeper-assess
@@ -85,7 +85,7 @@ cd ../build_scripts || exit
 DMG_NAME="Chia-$CHIA_INSTALLER_VERSION-arm64.dmg"
 echo "Create $DMG_NAME"
 mkdir final_installer
-electron-installer-dmg dist/Chia-darwin-arm64/Rose.app Chia-$CHIA_INSTALLER_VERSION-arm64 \
+electron-installer-dmg dist/Chia-darwin-arm64/Chia.app Chia-$CHIA_INSTALLER_VERSION-arm64 \
 --overwrite --out final_installer
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
