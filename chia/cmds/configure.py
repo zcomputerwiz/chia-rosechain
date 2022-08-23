@@ -92,7 +92,7 @@ def configure(
         if testnet == "true" or testnet == "t":
             print("Setting Testnet")
             testnet_port = "58520"
-            testnet_introducer = "beta1_introducer.rosechain.net"
+            testnet_introducer = "beta1_introducer.blockchain.net"
             testnet = "testnet7"
             config["full_node"]["port"] = int(testnet_port)
             config["full_node"]["introducer_peer"]["port"] = int(testnet_port)
@@ -117,7 +117,7 @@ def configure(
         elif testnet == "false" or testnet == "f":
             print("Setting Mainnet")
             mainnet_port = "8520"
-            mainnet_introducer = "introducer1.rosechain.net"
+            mainnet_introducer = "introducer1.blockchain.net"
             net = "mainnet"
             config["full_node"]["port"] = int(mainnet_port)
             config["full_node"]["introducer_peer"]["port"] = int(mainnet_port)

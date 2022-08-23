@@ -46,12 +46,12 @@ Write-Output "Rose Version is: $env:ROSE_INSTALLER_VERSION"
 Write-Output "   ---"
 
 Write-Output "   ---"
-Write-Output "Build chia-rosechain wheels"
+Write-Output "Build chia-blockchain wheels"
 Write-Output "   ---"
 pip wheel --use-pep517 --extra-index-url https://pypi.chia.net/simple/ -f . --wheel-dir=.\build_scripts\win_build .
 
 Write-Output "   ---"
-Write-Output "Install chia-rosechain wheels into venv with pip"
+Write-Output "Install chia-blockchain wheels into venv with pip"
 Write-Output "   ---"
 
 Write-Output "pip install miniupnpc"
@@ -60,8 +60,8 @@ pip install --no-index --find-links=.\win_build\ miniupnpc
 # Write-Output "pip install setproctitle"
 # pip install setproctitle==1.2.2
 
-Write-Output "pip install chia-rosechain"
-pip install --no-index --find-links=.\win_build\ chia-rosechain
+Write-Output "pip install chia-blockchain"
+pip install --no-index --find-links=.\win_build\ chia-blockchain
 
 Write-Output "   ---"
 Write-Output "Use pyinstaller to create rose .exe's"
@@ -70,10 +70,10 @@ $SPEC_FILE = (python -c 'import chia; print(chia.PYINSTALLER_SPEC_PATH)') -join 
 pyinstaller --log-level INFO $SPEC_FILE
 
 Write-Output "   ---"
-Write-Output "Copy chia executables to chia-rosechain-gui\"
+Write-Output "Copy chia executables to chia-blockchain-gui\"
 Write-Output "   ---"
-Copy-Item "dist\daemon" -Destination "..\chia-rosechain-gui\" -Recurse
-Set-Location -Path "..\chia-rosechain-gui" -PassThru
+Copy-Item "dist\daemon" -Destination "..\chia-blockchain-gui\" -Recurse
+Set-Location -Path "..\chia-blockchain-gui" -PassThru
 
 git status
 

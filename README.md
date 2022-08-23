@@ -2,9 +2,9 @@
 
 Web & Explorer
 ---
-https://www.rosechain.net/
+https://www.blockchain.net/
 
-Chia officially informed that it is not allowed to use the chiarose domain name, so it will be updated to the rosechain domain name later. Recently, I have been busy cracking the chia Nft Plot. Update the official website after the completion.
+Chia officially informed that it is not allowed to use the chiarose domain name, so it will be updated to the blockchain domain name later. Recently, I have been busy cracking the chia Nft Plot. Update the official website after the completion.
 
 I apologize for the great trouble caused by the domain name issue to the chia official... 
 
@@ -18,15 +18,15 @@ https://www.youtube.com/channel/UCjIoEfbicwNm93geTwkgO2w
 
 https://space.bilibili.com/590572700/dynamic
 
-https://keybase.io/team/rosechainnet
+https://keybase.io/team/blockchainnet
 
 Pool:
 ---
 Src:      https://github.com/snight1983/rose-garden
 
-DemoPool: http://pool.rosechain.net:8080
+DemoPool: http://pool.blockchain.net:8080
 
-JoinPool: https://github.com/snight1983/chia-rosechain/wiki/How-to-Join-Rose-Pool
+JoinPool: https://github.com/snight1983/chia-blockchain/wiki/How-to-Join-Rose-Pool
 
 PoolAddress: https://alltheblocks.net/rose/address/xcr10554nmp8t4jsgwpnnp4cy9qys38c6nnc8j07aax39urjxfjlvpkq2u5xxh
 

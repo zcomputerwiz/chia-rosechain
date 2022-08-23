@@ -41,14 +41,14 @@ dev_dependencies = [
 ]
 
 kwargs = dict(
-    name="chia-rosechain",
+    name="chia-blockchain",
     author="Mariano Sorgente",
     author_email="mariano@chia.net",
-    description="Chia rosechain full node, farmer, timelord, and wallet.",
+    description="Chia blockchain full node, farmer, timelord, and wallet.",
     url="https://chia.net/",
     license="Apache License",
     python_requires=">=3.7, <4",
-    keywords="chia rosechain node",
+    keywords="chia blockchain node",
     install_requires=dependencies,
     setup_requires=["setuptools_scm"],
     extras_require=dict(

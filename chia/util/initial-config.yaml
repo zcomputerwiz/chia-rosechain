@@ -305,7 +305,7 @@ full_node:
   # List of trusted DNS seeders to bootstrap from.
   # If you modify this, please change the hardcode as well from FullNode.set_server()
   dns_servers:
-    - 'dns-introducer.rosechain.net'
+    - 'dns-introducer.blockchain.net'
   farmer_peer:
     host: *self_hostname
     port: 8547
@@ -313,7 +313,7 @@ full_node:
     host: *self_hostname
     port: 8546
   introducer_peer:
-    host: introducer1.rosechain.net # Chia AWS introducer IPv4/IPv6
+    host: introducer1.blockchain.net # Chia AWS introducer IPv4/IPv6
     port: 8520
   wallet_peer:
     host: *self_hostname
@@ -397,7 +397,7 @@ wallet:
   recent_peer_threshold: 6000
 
   introducer_peer:
-    host: introducer1.rosechain.net # Chia AWS introducer IPv4/IPv6
+    host: introducer1.blockchain.net # Chia AWS introducer IPv4/IPv6
     port: 8520
 
   ssl:
