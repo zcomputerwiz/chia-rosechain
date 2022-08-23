@@ -12,16 +12,16 @@ else
 fi
 
 pip install setuptools_scm
-# The environment variable ROSE_INSTALLER_VERSION needs to be defined
+# The environment variable CHIA_INSTALLER_VERSION needs to be defined
 # If the env variable NOTARIZE and the username and password variables are
 # set, this will attempt to Notarize the signed DMG
-ROSE_INSTALLER_VERSION=$(python installer-version.py)
+CHIA_INSTALLER_VERSION=$(python installer-version.py)
 
-if [ ! "$ROSE_INSTALLER_VERSION" ]; then
-	echo "WARNING: No environment variable ROSE_INSTALLER_VERSION set. Using 0.0.0."
-	ROSE_INSTALLER_VERSION="0.0.0"
+if [ ! "$CHIA_INSTALLER_VERSION" ]; then
+	echo "WARNING: No environment variable CHIA_INSTALLER_VERSION set. Using 0.0.0."
+	CHIA_INSTALLER_VERSION="0.0.0"
 fi
-echo "Rose Installer Version is: $ROSE_INSTALLER_VERSION"
+echo "Rose Installer Version is: $CHIA_INSTALLER_VERSION"
 
 echo "Installing npm and electron packagers"
 npm install electron-packager -g
@@ -57,7 +57,7 @@ fi
 
 electron-packager . chia-blockchain --asar.unpack="**/daemon/**" --platform=linux \
 --icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=com.chia.blockchain \
---appVersion=$ROSE_INSTALLER_VERSION
+--appVersion=$CHIA_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-packager failed!"
@@ -67,11 +67,11 @@ fi
 mv $DIR_NAME ../build_scripts/dist/
 cd ../build_scripts || exit
 
-echo "Create chia-blockchain-$ROSE_INSTALLER_VERSION.deb"
+echo "Create chia-blockchain-$CHIA_INSTALLER_VERSION.deb"
 rm -rf final_installer
 mkdir final_installer
 electron-installer-debian --src dist/$DIR_NAME/ --dest final_installer/ \
---arch "$PLATFORM" --options.version $ROSE_INSTALLER_VERSION
+--arch "$PLATFORM" --options.version $CHIA_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-installer-debian failed!"

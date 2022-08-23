@@ -34,15 +34,15 @@ pip install pyinstaller==4.2
 pip install setuptools_scm
 
 Write-Output "   ---"
-Write-Output "Get ROSE_INSTALLER_VERSION"
-# The environment variable ROSE_INSTALLER_VERSION needs to be defined
-$env:ROSE_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
+Write-Output "Get CHIA_INSTALLER_VERSION"
+# The environment variable CHIA_INSTALLER_VERSION needs to be defined
+$env:CHIA_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
 
-if (-not (Test-Path env:ROSE_INSTALLER_VERSION)) {
-  $env:ROSE_INSTALLER_VERSION = '0.0.0'
-  Write-Output "WARNING: No environment variable ROSE_INSTALLER_VERSION set. Using 0.0.0"
+if (-not (Test-Path env:CHIA_INSTALLER_VERSION)) {
+  $env:CHIA_INSTALLER_VERSION = '0.0.0'
+  Write-Output "WARNING: No environment variable CHIA_INSTALLER_VERSION set. Using 0.0.0"
   }
-Write-Output "Rose Version is: $env:ROSE_INSTALLER_VERSION"
+Write-Output "Rose Version is: $env:CHIA_INSTALLER_VERSION"
 Write-Output "   ---"
 
 Write-Output "   ---"
@@ -102,7 +102,7 @@ Write-Output "Increase the stack for chia command for (chia plots create) chiapo
 editbin.exe /STACK:8000000 daemon\chia.exe
 Write-Output "   ---"
 
-$packageVersion = "$env:ROSE_INSTALLER_VERSION"
+$packageVersion = "$env:CHIA_INSTALLER_VERSION"
 $packageName = "Rose-$packageVersion"
 
 Write-Output "packageName is $packageName"

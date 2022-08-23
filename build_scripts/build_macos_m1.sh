@@ -3,16 +3,16 @@
 set -euo pipefail
 
 pip install setuptools_scm
-# The environment variable ROSE_INSTALLER_VERSION needs to be defined.
+# The environment variable CHIA_INSTALLER_VERSION needs to be defined.
 # If the env variable NOTARIZE and the username and password variables are
 # set, this will attempt to Notarize the signed DMG.
-ROSE_INSTALLER_VERSION=$(python installer-version.py)
+CHIA_INSTALLER_VERSION=$(python installer-version.py)
 
-if [ ! "$ROSE_INSTALLER_VERSION" ]; then
-	echo "WARNING: No environment variable ROSE_INSTALLER_VERSION set. Using 0.0.0."
-	ROSE_INSTALLER_VERSION="0.0.0"
+if [ ! "$CHIA_INSTALLER_VERSION" ]; then
+	echo "WARNING: No environment variable CHIA_INSTALLER_VERSION set. Using 0.0.0."
+	CHIA_INSTALLER_VERSION="0.0.0"
 fi
-echo "Rose Installer Version is: $ROSE_INSTALLER_VERSION"
+echo "Rose Installer Version is: $CHIA_INSTALLER_VERSION"
 
 echo "Installing npm and electron packagers"
 npm install electron-installer-dmg -g
@@ -60,7 +60,7 @@ fi
 
 electron-packager . Rose --asar.unpack="**/daemon/**" --platform=darwin \
 --icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=com.chia.blockchain \
---appVersion=$ROSE_INSTALLER_VERSION
+--appVersion=$CHIA_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-packager failed!"
@@ -82,10 +82,10 @@ fi
 mv Rose-darwin-arm64 ../build_scripts/dist/
 cd ../build_scripts || exit
 
-DMG_NAME="Rose-$ROSE_INSTALLER_VERSION-arm64.dmg"
+DMG_NAME="Rose-$CHIA_INSTALLER_VERSION-arm64.dmg"
 echo "Create $DMG_NAME"
 mkdir final_installer
-electron-installer-dmg dist/Rose-darwin-arm64/Rose.app Rose-$ROSE_INSTALLER_VERSION-arm64 \
+electron-installer-dmg dist/Rose-darwin-arm64/Rose.app Rose-$CHIA_INSTALLER_VERSION-arm64 \
 --overwrite --out final_installer
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
