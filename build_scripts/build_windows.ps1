@@ -103,7 +103,7 @@ editbin.exe /STACK:8000000 daemon\chia.exe
 Write-Output "   ---"
 
 $packageVersion = "$env:CHIA_INSTALLER_VERSION"
-$packageName = "Rose-$packageVersion"
+$packageName = "Chia-$packageVersion"
 
 Write-Output "packageName is $packageName"
 
@@ -123,8 +123,8 @@ If ($env:HAS_SECRET) {
    Write-Output "   ---"
    Write-Output "Add timestamp and verify signature"
    Write-Output "   ---"
-   signtool.exe timestamp /v /t http://timestamp.comodoca.com/ .\release-builds\windows-installer\Rose-$packageVersion.exe
-   signtool.exe verify /v /pa .\release-builds\windows-installer\Rose-$packageVersion.exe
+   signtool.exe timestamp /v /t http://timestamp.comodoca.com/ .\release-builds\windows-installer\Chia-$packageVersion.exe
+   signtool.exe verify /v /pa .\release-builds\windows-installer\Chia-$packageVersion.exe
    }   Else    {
    Write-Output "Skipping timestamp and verify signatures - no authorization to install certificates"
 }

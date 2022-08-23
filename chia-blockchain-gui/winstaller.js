@@ -14,7 +14,7 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    appDirectory: path.join(rootPath, 'Rose-win32-x64'),
+    appDirectory: path.join(rootPath, 'Chia-win32-x64'),
     authors: 'Rose',
     version: process.env.CHIA_INSTALLER_VERSION,
     noMsi: true,
@@ -24,7 +24,7 @@ function getInstallerConfig () {
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
 	name:'chia-blockchain',
     exe: 'Rose.exe',
-    setupExe: 'Rose-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
+    setupExe: 'Chia-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chia.ico')
   })
 }
