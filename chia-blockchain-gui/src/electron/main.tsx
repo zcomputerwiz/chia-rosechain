@@ -355,7 +355,7 @@ if (!handleSquirrelEvent()) {
         role: 'help',
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'Chia blockchain Wiki' }),
+            label: i18n._(/* i18n */ { id: 'Chia Blockchain Wiki' }),
             click: () => {
               openExternal(
                 'https://github.com/snight1983/chia-blockchain/wiki',
@@ -414,12 +414,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // Chia blockchain menu (Mac)
+      // Chia Blockchain menu (Mac)
       template.unshift({
         label: i18n._(/* i18n */ { id: 'Chia' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About Chia blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About Chia Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -506,7 +506,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About Chia blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About Chia Blockchain' }),
           click() {
             openAbout();
           },

@@ -1,8 +1,8 @@
 {
   "name": "chia-blockchain",
   "author": "Snight <51171107@qq.com> (https://www.blockchain.net/)",
-  "description": "GUI for blockchain Solo",
-  "productName": "blockchain Solo",
+  "description": "GUI for Blockchain Pool",
+  "productName": "Blockchain Pool",
   "private": true,
   "homepage": "./",
   "main": "build/electron/main.js",

@@ -22,6 +22,7 @@ type PoolState = {
     pool_puzzle_hash: string;
     pool_url: string;
     launcher_id: string;
+    p2_chia_contract_or_pool_public_key: string;
     target: string;
     target_signature: string;
     pool_payout_instructions: string;

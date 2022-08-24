@@ -16,6 +16,7 @@ type PoolWalletStatus = {
     puzzle_hash: string;
   };
   launcher_id: string;
+  p2_chia_contract_or_pool_public_key: string;
   p2_singleton_puzzle_hash: string;
   tip_singleton_coin_id: string;
   wallet_id: number;

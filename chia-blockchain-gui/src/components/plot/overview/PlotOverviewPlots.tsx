@@ -9,13 +9,13 @@ import {
   FormatBytes,
   StateColor,
   Address,
+  Tooltip,
 } from '@chia/core';
 import {
   Box,
   Typography,
   TableCell,
   TableRow,
-  Tooltip,
 } from '@material-ui/core';
 import type Plot from '../../../types/Plot';
 import PlotStatusEnum from '../../../constants/PlotStatus';
@@ -76,15 +76,20 @@ const cols = [
   },
   {
     minWidth: '100px',
-    field: 'pool_public_key',
-    tooltip: 'pool_public_key',
-    title: <Trans>Pool Key</Trans>,
-  },
-  {
-    minWidth: '100px',
     field: 'harvester.node_id',
     tooltip: 'harvester.node_id',
     title: <Trans>Node Id</Trans>,
+  },
+  {
+    minWidth: '100px',
+    field: ({ pool_public_key }: Plot) => (
+      <Tooltip title={pool_public_key} copyToClipboard>
+        <Typography variant="body2" noWrap>
+            {pool_public_key}
+        </Typography>
+      </Tooltip>
+    ),
+    title: <Trans>Pool Key</Trans>,
   },
   {
     minWidth: '100px',

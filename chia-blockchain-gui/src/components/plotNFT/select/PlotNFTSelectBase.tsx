@@ -139,7 +139,17 @@ export default function PlotNFTSelectBase(props: Props) {
               </RadioGroup>
             </FormControl>
           </Grid>
-
+          {!hideFee && (
+            <Grid xs={12} item>
+              <ChiaTextField
+                name="cAddress"
+                variant="filled"
+                color="secondary"
+                fullWidth
+                label={<Trans>Copy the pool contract address or public key here : )</Trans>}
+              />
+            </Grid>
+          )}
           {!hideFee && (
             <Grid xs={12} lg={6} item>
               <Fee

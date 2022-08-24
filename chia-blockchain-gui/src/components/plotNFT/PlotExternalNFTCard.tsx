@@ -68,7 +68,7 @@ export default function PlotExternalNFTCard(props: Props) {
     nft: {
       pool_state: {
         p2_singleton_puzzle_hash,
-        pool_config: { launcher_id, pool_url },
+        pool_config: { launcher_id, pool_url, p2_chia_contract_or_pool_public_key },
         points_found_24h,
         points_acknowledged_24h,
       },
@@ -299,6 +299,16 @@ export default function PlotExternalNFTCard(props: Props) {
             <Tooltip title={launcher_id} copyToClipboard>
               <Typography variant="body2" noWrap>
                 {launcher_id}
+              </Typography>
+            </Tooltip>
+          </Flex>
+          <Flex flexDirection="column" gap={1}>
+            <Typography variant="body1" color="textSecondary" noWrap>
+              <Trans>Create Plot contract or public key</Trans>
+            </Typography>
+            <Tooltip title={p2_chia_contract_or_pool_public_key} copyToClipboard>
+              <Typography variant="body2" noWrap>
+                {p2_chia_contract_or_pool_public_key}
               </Typography>
             </Tooltip>
           </Flex>

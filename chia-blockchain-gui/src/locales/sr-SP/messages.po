@@ -49,7 +49,7 @@ msgstr "Сакупљач је услуга која ради на машини �
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About Chia blockchain"
+msgid "About Chia Blockchain"
 msgstr ""
 
 #: src/components/trading/ViewOffer.jsx:74
@@ -60,7 +60,7 @@ msgstr "Прихвати"
 msgid "Accepted at time:"
 msgstr "Прихваћено у:"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:114
+#: src/components/plot/overview/PlotOverviewPlots.tsx:119
 #: src/components/plot/PlotsFailed.tsx:19
 #: src/components/plot/PlotsNotFound.tsx:19
 msgid "Action"
@@ -94,7 +94,7 @@ msgstr "Додај плот на чекање"
 #: src/components/plot/overview/PlotOverviewHero.tsx:54
 #: src/components/plot/PlotHeader.tsx:63
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:232
-#: src/components/plotNFT/PlotNFTCard.tsx:271
+#: src/components/plotNFT/PlotNFTCard.tsx:272
 msgid "Add a Plot"
 msgstr "Додај плот"
 
@@ -148,7 +148,7 @@ msgstr "Вредност иницијалног новчића"
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Да ли сте сигурни да желите да избришете плот? Плот се не може повратити."
 
-#: src/components/plotNFT/PlotNFTCard.tsx:122
+#: src/components/plotNFT/PlotNFTCard.tsx:123
 #: src/components/wallet/standard/WalletStandard.tsx:721
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr ""
@@ -303,7 +303,7 @@ msgstr "Хеш изазов"
 msgid "Change"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTCard.tsx:396
+#: src/components/plotNFT/PlotNFTCard.tsx:408
 #: src/components/plotNFT/PlotNFTChangePool.tsx:110
 #: src/components/pool/PoolOverview.tsx:115
 msgid "Change Pool"
@@ -326,7 +326,7 @@ msgstr "Chia"
 #~ msgstr ""
 
 #: src/electron/main.tsx:358
-msgid "Chia blockchain Wiki"
+msgid "Chia Blockchain Wiki"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
@@ -337,7 +337,7 @@ msgstr "Изабери број плотова"
 msgid "Choose Plot Size"
 msgstr "Изабери величину плота"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:372
+#: src/components/plotNFT/PlotNFTCard.tsx:384
 #: src/components/pool/PoolOverview.tsx:92
 msgid "Claim Rewards"
 msgstr ""
@@ -390,7 +390,7 @@ msgstr "Потврди"
 msgid "Confirm Disconnect"
 msgstr "Потврда прекида везе"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:118
+#: src/components/plotNFT/PlotNFTCard.tsx:119
 #: src/components/wallet/standard/WalletStandard.tsx:717
 msgid "Confirmation"
 msgstr ""
@@ -462,8 +462,8 @@ msgstr "Копирај"
 #~ msgstr ""
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:149
-#~ msgid "Copy the pool contract address or public key here : )"
-#~ msgstr ""
+msgid "Copy the pool contract address or public key here : )"
+msgstr ""
 
 #: src/components/core/components/CopyToClipboard/CopyToClipboard.tsx:33
 msgid "Copy to Clipboard"
@@ -493,8 +493,8 @@ msgstr "Креирај понуду"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:307
 #: src/components/plotNFT/PlotNFTCard.tsx:350
-#~ msgid "Create Plot contract or public key"
-#~ msgstr ""
+msgid "Create Plot contract or public key"
+msgstr ""
 
 #: src/components/wallet/create/createRLAdmin.jsx:188
 msgid "Create Rate Limited Admin Wallet"
@@ -575,12 +575,12 @@ msgid "Currency code is not defined"
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:141
-#: src/components/plotNFT/PlotNFTCard.tsx:180
+#: src/components/plotNFT/PlotNFTCard.tsx:181
 msgid "Current Difficulty"
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:158
-#: src/components/plotNFT/PlotNFTCard.tsx:197
+#: src/components/plotNFT/PlotNFTCard.tsx:198
 msgid "Current Points Balance"
 msgstr ""
 
@@ -614,7 +614,7 @@ msgstr "Одлагање"
 #: src/components/plot/PlotAction.tsx:57
 #: src/components/plot/queue/PlotQueueActions.tsx:43
 #: src/components/plot/queue/PlotQueueActions.tsx:97
-#: src/components/plotNFT/PlotNFTCard.tsx:119
+#: src/components/plotNFT/PlotNFTCard.tsx:120
 #: src/components/selectKey/SelectKey.tsx:59
 #: src/components/selectKey/SelectKey.tsx:80
 #: src/components/wallet/standard/WalletStandard.tsx:718
@@ -626,7 +626,7 @@ msgstr "Обриши"
 msgid "Delete Plot"
 msgstr "Обриши плот"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:314
+#: src/components/plotNFT/PlotNFTCard.tsx:315
 #: src/components/wallet/standard/WalletStandard.tsx:752
 msgid "Delete Unconfirmed Transactions"
 msgstr ""
@@ -759,7 +759,7 @@ msgstr "Изузмите коначни директоријум"
 msgid "Failed to open (invalid plots)"
 msgstr "Отварање није успело (неважећи плотови)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/wallet/coloured/WalletColoured.tsx:610
 #: src/components/wallet/standard/WalletStandard.tsx:621
 msgid "Farm"
@@ -824,7 +824,7 @@ msgstr "Статус обраде"
 
 #: src/components/core/components/Fee/Fee.tsx:48
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:154
-#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:149
+#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:159
 #: src/components/pool/PoolInfo.tsx:17
 #: src/components/wallet/create/createExistingColouredCoin.jsx:123
 #: src/components/wallet/create/createNewColouredCoin.jsx:132
@@ -861,7 +861,7 @@ msgstr "Износ накнада"
 msgid "File"
 msgstr "Датотека"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:106
+#: src/components/plot/overview/PlotOverviewPlots.tsx:111
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
 msgid "Filename"
@@ -884,7 +884,7 @@ msgstr "Пратите нас на Твитеру"
 msgid "Frequently Asked Questions"
 msgstr "Често Постављана Питања"
 
-#: src/components/dashboard/DashboardSideBar.tsx:38
+#: src/components/dashboard/DashboardSideBar.tsx:39
 #: src/components/fullNode/FullNode.jsx:323
 msgid "Full Node"
 msgstr "Пун Чвор"
@@ -921,7 +921,7 @@ msgstr "ХД или хијерархијски детерминистички к
 #~ msgid "Harvester ID"
 #~ msgstr ""
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:132
+#: src/components/plot/overview/PlotOverviewPlots.tsx:137
 msgid "Harvester Plots"
 msgstr ""
 
@@ -1029,7 +1029,7 @@ msgstr ""
 msgid "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTCard.tsx:394
+#: src/components/plotNFT/PlotNFTCard.tsx:406
 #: src/components/pool/PoolOverview.tsx:113
 msgid "Join Pool"
 msgstr ""
@@ -1056,7 +1056,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "К-величина"
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Keys"
 msgstr "Кључеви"
 
@@ -1078,7 +1078,7 @@ msgid "Latest Block Challenges"
 msgstr "Најновији блок изазови"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:297
-#: src/components/plotNFT/PlotNFTCard.tsx:349
+#: src/components/plotNFT/PlotNFTCard.tsx:361
 msgid "Launcher Id"
 msgstr ""
 
@@ -1241,7 +1241,7 @@ msgstr "Нема приватних кључева за једну или обе
 msgid "Node ID"
 msgstr "ID чвора"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:87
+#: src/components/plot/overview/PlotOverviewPlots.tsx:81
 msgid "Node Id"
 msgstr ""
 
@@ -1287,7 +1287,7 @@ msgid "Note that this does not change your pooling payout addresses. This only a
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:120
-#: src/components/plotNFT/PlotNFTCard.tsx:159
+#: src/components/plotNFT/PlotNFTCard.tsx:160
 msgid "Number of Plots"
 msgstr ""
 
@@ -1493,7 +1493,7 @@ msgstr "Плот је дупликат {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:49
+#: src/components/dashboard/DashboardSideBar.tsx:50
 msgid "Plots"
 msgstr "Плотови"
 
@@ -1522,29 +1522,30 @@ msgstr "Плотовање са омогућеним бит пољем има о
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:176
-#: src/components/plotNFT/PlotNFTCard.tsx:215
+#: src/components/plotNFT/PlotNFTCard.tsx:216
 msgid "Points Found Since Start"
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:187
-#: src/components/plotNFT/PlotNFTCard.tsx:226
+#: src/components/plotNFT/PlotNFTCard.tsx:227
 msgid "Points Found in Last 24 Hours"
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:196
-#: src/components/plotNFT/PlotNFTCard.tsx:235
+#: src/components/plotNFT/PlotNFTCard.tsx:236
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
+#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr ""
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:100
+#: src/components/plot/overview/PlotOverviewPlots.tsx:105
 msgid "Pool Contract Address"
 msgstr ""
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:81
+#: src/components/plot/overview/PlotOverviewPlots.tsx:92
 msgid "Pool Key"
 msgstr "Кључ пула"
 
@@ -1604,7 +1605,7 @@ msgid "Pool public key:"
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:274
-#: src/components/plotNFT/PlotNFTCard.tsx:326
+#: src/components/plotNFT/PlotNFTCard.tsx:327
 #: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:57
 msgid "Pool:"
 msgstr ""
@@ -1957,9 +1958,9 @@ msgstr "Стање"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:59
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:67
-#: src/components/plot/overview/PlotOverviewPlots.tsx:110
+#: src/components/plot/overview/PlotOverviewPlots.tsx:115
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:115
-#: src/components/plotNFT/PlotNFTCard.tsx:144
+#: src/components/plotNFT/PlotNFTCard.tsx:145
 #: src/components/pool/PoolOverview.tsx:44
 #: src/components/trading/TradingOverview.jsx:128
 #: src/components/wallet/WalletHistory.tsx:55
@@ -2130,7 +2131,7 @@ msgid "This allows you to add a directory that has plots in it. If you have not 
 msgstr "Ово ти омогућава да додаш фолдер који садржи плотове. Ако још немаш креиран ниједан плот, иди на прозор за њихово креирање."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:132
-#: src/components/plotNFT/PlotNFTCard.tsx:171
+#: src/components/plotNFT/PlotNFTCard.tsx:172
 msgid "This difficulty is an artifically lower difficulty than on the real network, and is used when farming, in order to find more proofs and send them to the pool. The more plots you have, the higher difficulty you will have. However, the difficulty does not affect rewards."
 msgstr ""
 
@@ -2169,12 +2170,12 @@ msgid "This is the total balance + pending balance: it is what your balance will
 msgstr "Ово је укупно стање + стање на чекању: то ће бити твоје стање након потврде свих трансакција на чекању."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:151
-#: src/components/plotNFT/PlotNFTCard.tsx:190
+#: src/components/plotNFT/PlotNFTCard.tsx:191
 msgid "This is the total number of points this plotNFT has with this pool, since the last payout. The pool will reset the points after making a payout."
 msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:168
-#: src/components/plotNFT/PlotNFTCard.tsx:207
+#: src/components/plotNFT/PlotNFTCard.tsx:208
 msgid "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
 msgstr ""
 
@@ -2182,7 +2183,7 @@ msgstr ""
 msgid "This node is fully caught up and validating the network"
 msgstr "Пун чвор је достигнут и верификује мрежу"
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:310
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:320
 msgid "This plot NFT is assigned to a different key. You can still create plots for this plot NFT, but you can not make changes."
 msgstr ""
 
@@ -2252,7 +2253,7 @@ msgstr "Укупно понављања"
 msgid "Total Network Space"
 msgstr "Укупни простор на мрежи"
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:146
+#: src/components/plot/overview/PlotOverviewPlots.tsx:151
 msgid "Total Plot Size:"
 msgstr "Укупна величина плота:"
 
@@ -2312,7 +2313,7 @@ msgstr "Тип"
 msgid "Unable to create plot NFT"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTCard.tsx:149
+#: src/components/plotNFT/PlotNFTCard.tsx:150
 #: src/components/pool/PoolOverview.tsx:66
 msgid "Unclaimed Rewards"
 msgstr ""
@@ -2350,7 +2351,7 @@ msgstr "Подслотови VDF понављања"
 msgid "Value seems high"
 msgstr ""
 
-#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:158
+#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:168
 msgid "Verify Pool Details"
 msgstr ""
 
@@ -2372,7 +2373,7 @@ msgstr "Погледај понуду"
 #~ msgid "View Payout Instructions"
 #~ msgstr ""
 
-#: src/components/plotNFT/PlotNFTCard.tsx:285
+#: src/components/plotNFT/PlotNFTCard.tsx:286
 msgid "View Pool Login Link"
 msgstr ""
 
@@ -2436,7 +2437,7 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:44
+#: src/components/dashboard/DashboardSideBar.tsx:45
 #: src/components/wallet/Wallets.tsx:173
 msgid "Wallets"
 msgstr "Новчаници"
@@ -2449,7 +2450,7 @@ msgstr "Новчаници"
 msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr ""
 
-#: src/components/plot/overview/PlotOverviewPlots.tsx:139
+#: src/components/plot/overview/PlotOverviewPlots.tsx:144
 msgid "Want to earn more Chia? Add more plots to your farm."
 msgstr "Желиш да зарадиш више? Додај још плотова у фарму."
 
@@ -2500,7 +2501,7 @@ msgstr ""
 msgid "You are not self pooling"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTCard.tsx:412
+#: src/components/plotNFT/PlotNFTCard.tsx:424
 msgid "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
 msgstr ""
 

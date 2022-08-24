@@ -14,6 +14,7 @@ import Wallets from '../wallet/Wallets';
 import FullNode from '../fullNode/FullNode';
 import Plot from '../plot/Plot';
 import Farm from '../farm/Farm';
+import Pool from '../pool/Pool';
 import Block from '../block/Block';
 import DashboardSideBar from './DashboardSideBar';
 import { DashboardTitleTarget } from './DashboardTitle';
@@ -94,6 +95,9 @@ export default function Dashboard() {
           </Route>
           <Route path={`${path}/farm`}>
             <Farm />
+          </Route>
+          <Route path={`${path}/pool`}>
+            <Pool />
           </Route>
           <Route path={`${path}/trade`}>
             <TradeManager />
